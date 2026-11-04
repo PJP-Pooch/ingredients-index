@@ -1,0 +1,75 @@
+:root {
+  /* Masterbrand */
+  --navy: #071D49;
+  --navy-ink: #00174D;      /* illustration line colour */
+  --cream: #F2E9DB;
+  --cream-deep: #E8DCC8;
+  --paper: #FBF7F0;         /* card surface on cream */
+  --maroon: #7E2D37;        /* ingredient illustration outline */
+
+  /* Range accents (backgrounds / tabs only) */
+  --wellbeing: #AD96DC;
+  --superfoods: #F1B434;
+  --veterinary: #77C5D5;
+  --primal: #F5812B;
+  --fresh: #56C271;
+  --raw: #D66965;
+
+  /* Benefit colours */
+  --b-calm: #EC86D0;
+  --b-digestion: #71C5E8;
+  --b-weight: #FF8D6D;
+  --b-skin: #FFBF3F;
+  --b-teeth: #79D97C;
+  --b-joints: #8CE2D0;
+  --b-immunity: #C7E995;
+  --b-energy: #F0E991;
+
+  /* Verdicts */
+  --v-safe: #56C271;      --v-safe-bg: #DDF1DF;
+  --v-mod: #F1B434;       --v-mod-bg: #FBEAC2;
+  --v-caution: #F5812B;   --v-caution-bg: #FCD9BE;
+  --v-toxic: #D66965;     --v-toxic-bg: var(--navy);
+
+  /* Type */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display-settings: "SOFT" 100, "WONK" 0;
+
+  --fs-xs: .75rem;
+  --fs-sm: .875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.35rem, 1.1rem + 1vw, 1.75rem);
+  --fs-2xl: clamp(1.9rem, 1.4rem + 2.4vw, 3rem);
+  --fs-3xl: clamp(2.4rem, 1.6rem + 4vw, 4.5rem);
+
+  /* Space & shape */
+  --sp-1: .25rem; --sp-2: .5rem; --sp-3: .75rem; --sp-4: 1rem;
+  --sp-5: 1.5rem; --sp-6: 2rem; --sp-7: 3rem; --sp-8: 4.5rem;
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --gutter: 16px;
+  --maxw: 1200px;
+  --shadow: 0 1px 0 rgba(7, 29, 73, .06), 0 8px 24px -12px rgba(7, 29, 73, .25);
+  --shadow-lift: 0 2px 0 rgba(7, 29, 73, .08), 0 18px 36px -16px rgba(7, 29, 73, .35);
+
+  /* Motion */
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --dur-fast: 150ms;
+  --dur: 280ms;
+  --dur-slow: 420ms;
+
+  /* Pinked (zig-zag) edge depth */
+  --pink: 6px;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 32px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur: 0ms; --dur-slow: 0ms; }
+}
